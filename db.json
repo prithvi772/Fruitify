@@ -1,0 +1,197 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Vedant",
+      "email": "vedant@gmail.com",
+      "password": "1234",
+      "role": "admin"
+    },
+    {
+      "id": "47b8",
+      "name": "John",
+      "email": "John@gmail.com",
+      "password": "12345",
+      "role": "user"
+    },
+    {
+      "id": "b816",
+      "name": "Alice",
+      "email": "Alice@gmail.com",
+      "password": "1234",
+      "role": "user"
+    },
+    {
+      "id": "78c8",
+      "name": "David",
+      "email": "david@gmail.com",
+      "password": "1234",
+      "role": "user"
+    },
+    {
+      "id": "07bc",
+      "name": "prithvi",
+      "email": "prithvigadekar772@gmail.com",
+      "password": "1234",
+      "role": "user"
+    }
+  ],
+  "fruits": [
+    {
+      "id": "6",
+      "name": "Strawberry",
+      "image": "strawberry.jpg",
+      "unit": "kg",
+      "mrp": 200,
+      "discount": 20,
+      "instock": true
+    },
+    {
+      "id": "7",
+      "name": "Papaya",
+      "image": "papaya.jpg",
+      "unit": "kg",
+      "mrp": "500",
+      "discount": "20",
+      "instock": true,
+      "qty": 0,
+      "finalPrice": 42.5
+    },
+    {
+      "id": "8",
+      "name": "Cherry",
+      "image": "cherry.jpg",
+      "unit": "kg",
+      "mrp": 300,
+      "discount": 5,
+      "instock": true
+    },
+    {
+      "id": "9",
+      "name": "Chikoo",
+      "image": "Chikoo.jpg",
+      "unit": "kg",
+      "mrp": 60,
+      "discount": 5,
+      "instock": false
+    },
+    {
+      "id": "10",
+      "name": "Kiwi",
+      "image": "Kiwi.jpg",
+      "unit": "piece",
+      "mrp": 20,
+      "discount": 0,
+      "instock": false
+    },
+    {
+      "id": "11",
+      "name": "Orange",
+      "image": "orange.jpg",
+      "unit": "kg",
+      "mrp": 200,
+      "discount": 10,
+      "instock": true
+    },
+    {
+      "id": "12",
+      "name": "Pear",
+      "image": "pear.jpg",
+      "unit": "kg",
+      "mrp": 200,
+      "discount": 7,
+      "instock": true
+    },
+    {
+      "id": "13",
+      "name": "Pineapple",
+      "image": "pineapple.jpg",
+      "unit": "piece",
+      "mrp": 100,
+      "discount": 50,
+      "instock": true
+    },
+    {
+      "id": "14",
+      "name": "Pomegranete",
+      "image": "pomegranete.jpg",
+      "unit": "kg",
+      "mrp": 200,
+      "discount": 5,
+      "instock": true
+    },
+    {
+      "id": "15",
+      "name": "Sitaphal",
+      "image": "sitaphal.jpg",
+      "unit": "kg",
+      "mrp": 100,
+      "discount": 10,
+      "instock": true
+    },
+    {
+      "id": "16",
+      "name": "Watermelon",
+      "image": "watermelon.jpg",
+      "unit": "piece",
+      "mrp": 80,
+      "discount": 50,
+      "instock": true
+    },
+    {
+      "id": "17",
+      "name": "Sweetlime",
+      "image": "sweetlime.jpg",
+      "unit": "kg",
+      "mrp": 200,
+      "discount": 5,
+      "instock": true
+    },
+    {
+      "id": "18",
+      "name": "Peach",
+      "image": "peach.jpg",
+      "unit": "kg",
+      "mrp": 200,
+      "discount": 10,
+      "instock": false
+    },
+    {
+      "id": "19",
+      "name": "Dragon",
+      "image": "dragon.jpg",
+      "unit": "piece",
+      "mrp": 60,
+      "discount": 0,
+      "instock": true
+    },
+    {
+      "id": "6923",
+      "name": "sweet potato",
+      "mrp": "50",
+      "discount": "8",
+      "instock": true,
+      "image": "dragon.jpg"
+    },
+    {
+      "id": "19e3",
+      "name": "Mango",
+      "mrp": "200",
+      "discount": "8",
+      "instock": true,
+      "image": "mango.jpg",
+      "qty": 0,
+      "finalPrice": 184
+    },
+    {
+      "id": "ba9b",
+      "name": "Grapes",
+      "mrp": "300",
+      "discount": "20",
+      "instock": true,
+      "image": "grapes.jpg",
+      "qty": 0,
+      "finalPrice": 240
+    }
+  ]
+}
