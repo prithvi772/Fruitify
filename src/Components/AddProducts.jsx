@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import "./AddProducts.css";
 
 export default function AddProducts(props) {
   let { productToBeEdited, setView, refreshList } = props;
@@ -84,6 +85,7 @@ export default function AddProducts(props) {
   return (
     <>
       {/* <Navbar></Navbar> */}
+      <div className="product-form-page">
       <button
         className="btn btn-primary my-2"
         onClick={() => {
@@ -92,11 +94,11 @@ export default function AddProducts(props) {
       >
         Product List
       </button>
-      <div className="vh-100 w-75 mx-auto d-flex justify-content-center align-items-start bg-danger-subtle">
-        <div className="myborder w-50 my-5">
+      <div className="product-form-shell vh-100 mx-auto d-flex justify-content-center align-items-start bg-danger-subtle">
+        <div className="product-form-card myborder my-5">
           {/* <form onSubmit={handleSubmit}> */}
-          <form onSubmit={handleProductSubmit}>
-            <div className="my-3">
+          <form className="product-admin-form" onSubmit={handleProductSubmit}>
+            <div className="product-form-field my-3">
               Product Name:
               <input
                 type="text"
@@ -107,7 +109,7 @@ export default function AddProducts(props) {
               />
             </div>
 
-            <div className="my-3">
+            <div className="product-form-field my-3">
               Product Mrp:
               <input
                 type="text"
@@ -117,7 +119,7 @@ export default function AddProducts(props) {
                 required
               />
             </div>
-            <div className="my-3">
+            <div className="product-form-field my-3">
               Product Discount:
               <input
                 type="text"
@@ -127,7 +129,7 @@ export default function AddProducts(props) {
                 required
               />
             </div>
-            <div className="my-3">
+            <div className="product-form-field my-3">
               Product In Stock:
               <select
                 name="instock"
@@ -146,7 +148,7 @@ export default function AddProducts(props) {
               </select>
             </div>
 
-            <div className="mb-3">
+            <div className="product-form-field mb-3">
               <label className="form-label">Select Product Image:</label>
               <select
                 className="form-select"
@@ -165,7 +167,7 @@ export default function AddProducts(props) {
               </select>
             </div>
             {preview && (
-              <div className="mb-3">
+              <div className="product-preview mb-3">
                 <label className="form-label">Image Preview:</label>
                 <br />
                 <img src={preview} alt="preview" width="150" />
@@ -173,7 +175,7 @@ export default function AddProducts(props) {
             )}
 
             {newProduct && (
-              <div className="w-75 d-flex justify-content-end gap-2 my-2">
+              <div className="product-form-actions d-flex justify-content-end gap-2 my-2">
                 <button type="submit" className="btn btn-danger">
                   {productToBeEdited ? "Update Product" : "Add Product"}
                 </button>
@@ -181,6 +183,7 @@ export default function AddProducts(props) {
             )}
           </form>
         </div>
+      </div>
       </div>
     </>
   );

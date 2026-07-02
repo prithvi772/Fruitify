@@ -1,0 +1,140 @@
+/* Contact page styles */
+
+.contact-page {
+  max-width: 1180px;
+  margin: 28px auto 0;
+}
+
+.contact-hero {
+  padding: 34px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 26px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+}
+
+.contact-eyebrow {
+  display: inline-flex;
+  margin-bottom: 12px;
+  color: var(--color-primary);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-hero h1 {
+  max-width: 760px;
+  margin: 0 auto 12px;
+  color: var(--color-text);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+.contact-hero p,
+.contact-info p {
+  color: var(--color-muted);
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.contact-form,
+.contact-info {
+  padding: 28px;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 22px;
+  box-shadow: var(--shadow-soft);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-form label {
+  color: var(--color-text);
+  font-weight: 800;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background: #ffffff;
+}
+
+.contact-info {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-info article {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px;
+  background: #f8fafc;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+}
+
+.contact-info i {
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+
+.contact-info h3 {
+  margin: 0 0 4px;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.contact-social {
+  display: flex;
+  gap: 12px;
+}
+
+.contact-social i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: #ffffff;
+  background: var(--color-primary);
+  border-radius: 999px;
+}
+
+@media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-hero,
+  .contact-form,
+  .contact-info {
+    padding: 22px 18px;
+  }
+}

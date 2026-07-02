@@ -1,0 +1,18 @@
+/* AdminPage component styles */
+
+.admin-page {
+  max-width: 1180px;
+  margin: 28px auto 0;
+}
+
+.admin-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0 8px;
+}
+
+@media (max-width: 576px) {
+  .admin-toolbar .btn {
+    width: 100%;
+  }
+}

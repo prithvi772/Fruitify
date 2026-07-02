@@ -34,56 +34,30 @@
       "email": "prithvigadekar772@gmail.com",
       "password": "1234",
       "role": "user"
+    },
+    {
+      "id": "359e",
+      "name": "paris",
+      "email": "paris@gmail.com",
+      "password": "p123",
+      "role": "user"
+    },
+    {
+      "id": "1965",
+      "name": "NIsarg Gundre",
+      "email": "nisarg@gmail.com",
+      "password": "1234",
+      "role": "user"
+    },
+    {
+      "id": "4ef7",
+      "name": "pqr",
+      "email": "pqr@gmail.com",
+      "password": "1234",
+      "role": "user"
     }
   ],
   "fruits": [
-    {
-      "id": "6",
-      "name": "Strawberry",
-      "image": "strawberry.jpg",
-      "unit": "kg",
-      "mrp": 200,
-      "discount": 20,
-      "instock": true
-    },
-    {
-      "id": "7",
-      "name": "Papaya",
-      "image": "papaya.jpg",
-      "unit": "kg",
-      "mrp": "500",
-      "discount": "20",
-      "instock": true,
-      "qty": 0,
-      "finalPrice": 42.5
-    },
-    {
-      "id": "8",
-      "name": "Cherry",
-      "image": "cherry.jpg",
-      "unit": "kg",
-      "mrp": 300,
-      "discount": 5,
-      "instock": true
-    },
-    {
-      "id": "9",
-      "name": "Chikoo",
-      "image": "Chikoo.jpg",
-      "unit": "kg",
-      "mrp": 60,
-      "discount": 5,
-      "instock": false
-    },
-    {
-      "id": "10",
-      "name": "Kiwi",
-      "image": "Kiwi.jpg",
-      "unit": "piece",
-      "mrp": 20,
-      "discount": 0,
-      "instock": false
-    },
     {
       "id": "11",
       "name": "Orange",
@@ -91,6 +65,7 @@
       "unit": "kg",
       "mrp": 200,
       "discount": 10,
+      "category": "Citrus",
       "instock": true
     },
     {
@@ -100,6 +75,7 @@
       "unit": "kg",
       "mrp": 200,
       "discount": 7,
+      "category": "Everyday",
       "instock": true
     },
     {
@@ -109,6 +85,7 @@
       "unit": "piece",
       "mrp": 100,
       "discount": 50,
+      "category": "Tropical",
       "instock": true
     },
     {
@@ -118,6 +95,7 @@
       "unit": "kg",
       "mrp": 200,
       "discount": 5,
+      "category": "Premium",
       "instock": true
     },
     {
@@ -127,6 +105,7 @@
       "unit": "kg",
       "mrp": 100,
       "discount": 10,
+      "category": "Seasonal",
       "instock": true
     },
     {
@@ -136,6 +115,7 @@
       "unit": "piece",
       "mrp": 80,
       "discount": 50,
+      "category": "Melons",
       "instock": true
     },
     {
@@ -145,6 +125,7 @@
       "unit": "kg",
       "mrp": 200,
       "discount": 5,
+      "category": "Citrus",
       "instock": true
     },
     {
@@ -154,6 +135,7 @@
       "unit": "kg",
       "mrp": 200,
       "discount": 10,
+      "category": "Stone Fruits",
       "instock": false
     },
     {
@@ -163,21 +145,15 @@
       "unit": "piece",
       "mrp": 60,
       "discount": 0,
+      "category": "Premium",
       "instock": true
-    },
-    {
-      "id": "6923",
-      "name": "sweet potato",
-      "mrp": "50",
-      "discount": "8",
-      "instock": true,
-      "image": "dragon.jpg"
     },
     {
       "id": "19e3",
       "name": "Mango",
       "mrp": "200",
       "discount": "8",
+      "category": "Tropical",
       "instock": true,
       "image": "mango.jpg",
       "qty": 0,
@@ -188,10 +164,20 @@
       "name": "Grapes",
       "mrp": "300",
       "discount": "20",
+      "category": "Berries",
       "instock": true,
       "image": "grapes.jpg",
       "qty": 0,
       "finalPrice": 240
+    },
+    {
+      "id": "39e8",
+      "name": "chikoo",
+      "mrp": "10",
+      "discount": "5",
+      "category": "Everyday",
+      "instock": true,
+      "image": "cherry.jpg"
     }
   ]
 }

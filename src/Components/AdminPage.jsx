@@ -3,6 +3,7 @@ import AdminProducts from "./AdminProducts";
 import Navbar from "./Navbar";
 import { useState } from "react";
 import AddProducts from "./AddProducts";
+import "./AdminPage.css";
 
 export default function AdminPage(props) {
   let { list, setList, user, setUser,refreshList } = props;
@@ -38,14 +39,17 @@ export default function AdminPage(props) {
       )}
       {view == "adminproducts" && (
         <>
+          <div className="admin-page">
+          <div className="admin-toolbar">
           <button
             className="btn btn-primary my-3"
             onClick={handleAddProductClick} // ✅ FIXED
           >
             Add Product
           </button>
+          </div>
 
-          <div className="row p-4">
+          <div className="admin-grid row g-4 px-0 px-md-2 py-4 justify-content-center">
             {view == "adminproducts" &&
               list.map((e, index) => (
                 <AdminProducts
@@ -56,6 +60,7 @@ export default function AdminPage(props) {
                   onEditBtnClick={handleEditBtnClick}
                 />
               ))}
+          </div>
           </div>
         </>
       )}

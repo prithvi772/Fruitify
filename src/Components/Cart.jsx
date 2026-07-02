@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
 import SingleCartItem from "./SingleCartItem";
 import Bill from "./Bill";
+import "./Cart.css";
 
 export default function Cart(props) {
   let { cartItems, setCartItems, view, setView } = props;
@@ -17,8 +18,9 @@ export default function Cart(props) {
   return (
     <>
       {cartItems.length >= 1 && (
-        <div>
-          <h2 className="my-1 text-center">🛒 Your Cart</h2>
+        <div className="cart-header">
+          <h2 className="cart-title my-1 text-center">🛒 Your Cart</h2>
+          <div className="cart-actions">
           <button
             className="btn btn-primary m-2"
             onClick={() => {
@@ -35,6 +37,7 @@ export default function Cart(props) {
           >
             proceed to bill
           </button>
+          </div>
         </div>
       )}
 
@@ -43,7 +46,7 @@ export default function Cart(props) {
         setView("products");
       }}>Products</button> */}
       {cartItems.length == 0 && (
-        <div className="container my-5">
+        <div className="cart-empty container my-5">
           <h2>🛒 Your Cart</h2>
           <h4>Cart is empty </h4>
           <button
@@ -60,7 +63,7 @@ export default function Cart(props) {
         </div>
       )}
 
-      <div className=" row  p-4">
+      <div className="cart-grid row g-4 px-0 px-md-2 py-4 justify-content-center">
         {cartItems.map((e, index) => {
           return (
             <SingleCartItem

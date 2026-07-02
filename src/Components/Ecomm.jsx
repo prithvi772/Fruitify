@@ -7,6 +7,7 @@ import AdminPage from "./AdminPage";
 import Cart from "./Cart";
 import Login from "./Login";
 import Bill from "./Bill";
+import OrderSuccess from "./OrderSuccess";
 export default function Ecomm(props) {
   let {
     list,
@@ -23,9 +24,31 @@ export default function Ecomm(props) {
   // let [list, setList] = useState([]);
 
   let [filteredProductList, setFilteredProductList] = useState([]);
+  let [searchText, setSearchText] = useState("");
+  let [sortBy, setSortBy] = useState("");
   useEffect(() => {
     getData();
   }, [refresh]);
+
+  let visibleProducts = list
+    .filter((current) => {
+      let productName = current.name ? current.name.toLowerCase() : "";
+      let searchValue = searchText.toLowerCase();
+      let matchesSearch = productName.includes(searchValue);
+      return matchesSearch;
+    })
+    .sort((a, b) => {
+      if (sortBy === "price-low-high") {
+        return Number(a.finalPrice || a.mrp) - Number(b.finalPrice || b.mrp);
+      }
+      if (sortBy === "price-high-low") {
+        return Number(b.finalPrice || b.mrp) - Number(a.finalPrice || a.mrp);
+      }
+      if (sortBy === "name-a-z") {
+        return String(a.name).localeCompare(String(b.name));
+      }
+      return 0;
+    });
 
   async function getData() {
     let response = await axios("http://localhost:4000/fruits");
@@ -105,9 +128,25 @@ export default function Ecomm(props) {
           />
         ) : view === "bill" ? (
           <Bill view={view} setView={setView} cartItems={cartItems} />
+        ) : view === "order-success" ? (
+          <OrderSuccess
+            cartItems={cartItems}
+            setCartItems={setCartItems}
+            setView={setView}
+            onResetProducts={() => {
+              let resetList = list.map((current) => {
+                return { ...current, qty: 0 };
+              });
+              setList(resetList);
+            }}
+          />
         ) : (
           <Products_Page
-            list={list}
+            list={visibleProducts}
+            searchText={searchText}
+            setSearchText={setSearchText}
+            sortBy={sortBy}
+            setSortBy={setSortBy}
             onAddCart={handleAddToCart}
             onQuant={handleQuantity}
           />

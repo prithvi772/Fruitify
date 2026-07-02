@@ -1,0 +1,131 @@
+/* Order success page styles */
+
+.order-success-page {
+  max-width: 880px;
+  margin: 36px auto 0;
+  padding: 0 4px 32px;
+}
+
+.order-success-card {
+  padding: 34px;
+  text-align: center;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  box-shadow: var(--shadow-soft);
+}
+
+.order-success-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 16px;
+  color: #ffffff;
+  background: var(--color-success);
+  border-radius: 50%;
+  font-size: 2.4rem;
+}
+
+.order-success-eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.order-success-card h1 {
+  color: var(--color-text);
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  font-weight: 900;
+}
+
+.order-success-card p {
+  max-width: 560px;
+  margin: 0 auto 24px;
+  color: var(--color-muted);
+}
+
+.order-success-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.order-success-meta div,
+.order-summary {
+  background: #f8fafc;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+}
+
+.order-success-meta div {
+  padding: 14px;
+}
+
+.order-success-meta span {
+  display: block;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.order-success-meta strong {
+  color: var(--color-text);
+  font-weight: 900;
+}
+
+.order-summary {
+  margin-bottom: 24px;
+  padding: 18px;
+  text-align: left;
+}
+
+.order-summary h2 {
+  margin-bottom: 14px;
+  color: var(--color-text);
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+.order-summary-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 14px;
+  padding: 10px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.order-summary-row span {
+  color: var(--color-muted);
+  font-weight: 700;
+}
+
+.order-summary-row strong {
+  color: var(--color-text);
+}
+
+@media (max-width: 576px) {
+  .order-success-card {
+    padding: 26px 16px;
+  }
+
+  .order-success-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .order-summary-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .order-success-card .btn {
+    width: 100%;
+  }
+}
