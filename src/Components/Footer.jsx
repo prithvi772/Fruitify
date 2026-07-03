@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="site-footer__main">
         <div>
-          <img className="site-footer__logo" src="/Images/shop_logo.jpg" alt="Fruitify logo" />
+          <img className="site-footer__logo" src="/Images/Fruitify.jpg" alt="Fruitify logo" />
           <p>
             Fruitify brings fresh fruits, simple shopping and dependable service
             for everyday healthy choices.

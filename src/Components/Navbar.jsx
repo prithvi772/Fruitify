@@ -64,7 +64,7 @@ export default function Navbar(props) {
           }} className="fruit-navbar__logo myborder" src={"/Images/Fruitify.jpg"}></img>
           <span className="fruit-navbar__brand-copy">
             <strong>Fruitify</strong>
-            <small>Fresh Fruits Delivered Daily.</small>
+            <small></small>
           </span>
         </Link>
         <div className="fruit-navbar__links">
