@@ -101,12 +101,6 @@ npm start
 
 ---
 
-## 📸 Screenshots
-
-*(Screenshots will be added soon.)*
-
----
-
 ## 👨‍💻 Developer
 
 **Prithvi Gadekar**
