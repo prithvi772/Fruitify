@@ -18,7 +18,7 @@ export default function Products(props) {
       return current.id != passedList.id;
     });
     console.log("List after deleted item:", product_list);
-    await axios.delete(`http://localhost:4000/fruits/${passedList.id}`);
+    await axios.delete(`https://fruitify-api.onrender.com/fruits/${passedList.id}`);
     setList(updatedDeletedList);
   }
   let storedUser = JSON.parse(localStorage.getItem("loggedInUser"));

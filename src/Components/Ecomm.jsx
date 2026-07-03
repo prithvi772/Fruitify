@@ -51,7 +51,7 @@ export default function Ecomm(props) {
     });
 
   async function getData() {
-    let response = await axios("http://localhost:4000/fruits");
+    let response = await axios("https://fruitify-api.onrender.com/fruits");
     let fruitList = response.data;
     fruitList = fruitList.map((element, index) => {
       element.qty = 0;

@@ -25,7 +25,7 @@ function App() {
   const [refreshProducts, setRefreshProducts] = useState(false);
 
   async function fetchProductList() {
-    const res = await axios.get("http://localhost:4000/fruits");
+    const res = await axios.get("https://fruitify-api.onrender.com/fruits");
     console.log("Fetched Products:", res.data); // ✅ add this
     setList(res.data);
   }

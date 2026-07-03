@@ -84,7 +84,7 @@ export default function Login(props) {
   }
   async function checkUserExist(user) {
     // event.preventDefault();
-    let response = await axios("http://localhost:4000/users");
+    let response = await axios("https://fruitify-api.onrender.com/users");
     let userdata = await response.data;
     let filteredLoginList = userdata.filter((e, index) => {
       return e.email == user.email && e.password == user.password;

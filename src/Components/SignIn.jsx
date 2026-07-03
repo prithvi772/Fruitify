@@ -140,7 +140,7 @@ export default function SignIn(props) {
   }
 
   async function checkUserExist() {
-    let response = await axios("http://localhost:4000/users");
+    let response = await axios("https://fruitify-api.onrender.com/users");
     let userData = await response.data;
     let filteredUserData = userData.filter((e, index) => {
       return e.email == user.email;
@@ -151,7 +151,7 @@ export default function SignIn(props) {
       setMessage("Sorry dear, This Email id already Exists.");
       return false;
     } else {
-      let resp = await axios.post("http://localhost:4000/users", user);
+      let resp = await axios.post("https://fruitify-api.onrender.com/users", user);
       setSuccessMessage("Account created successfully!");
       setSignInStatus("success");
       return true;

@@ -69,13 +69,13 @@ export default function AddProducts(props) {
 
   async function handleAddEditProduct(Product) {
     if (productToBeEdited && productToBeEdited.id) {
-      await axios.put(`http://localhost:4000/fruits/${Product.id}`, Product);
+      await axios.put(`https://fruitify-api.onrender.com/fruits/${Product.id}`, Product);
       alert("Product Updated SuccessFully.");
       // freshList();
       await refreshList();
     } else {
       const { id, ...productWithoutId } = Product;
-      await axios.post("http://localhost:4000/fruits", productWithoutId);
+      await axios.post("https://fruitify-api.onrender.com/fruits", productWithoutId);
       alert("Product Added SuccessFully.");
       await refreshList();
     }
