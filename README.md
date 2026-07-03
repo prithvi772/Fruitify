@@ -1,23 +1,118 @@
-# 🛒 E-commerce React App
+# 🍎 Fruitify
 
-Welcome to **Prithvi's Fruit Stall** — a simple and responsive E-commerce application built with React. It includes product listing, shopping cart functionality, and an itemized bill generator with WhatsApp sharing support!
+A modern and responsive fruit shopping web application built with **React**. Fruitify provides a smooth online fruit shopping experience with user authentication, admin product management, shopping cart, billing, and a clean responsive interface.
 
 ---
 
-## 🚀 Features
+## 🌐 Live Demo
 
-- 🧺 **Product List** – View all available fruits/products.
-- ➕ **Add to Cart** – Add items to your cart with adjustable quantity.
-- 🧾 **Cart Summary** – Real-time updates of selected products.
-- 💰 **Billing Page** – Displays item-wise billing with total price.
-- 📤 **WhatsApp Integration** – Share your bill directly on WhatsApp!
-- 📆 **Live Date** – Displays the current date on the bill.
+### 🖥️ Frontend
+https://fruitify-shop.vercel.app
+
+### ⚙️ Backend API
+https://fruitify-api.onrender.com
+
+---
+
+## ✨ Features
+
+- 🍎 Browse fresh fruits by category
+- 🔍 Search products instantly
+- 👤 User Registration & Login
+- 👨‍💼 Admin Dashboard
+- ➕ Add, Edit & Delete Products
+- 🛒 Shopping Cart
+- 💳 Bill Generation
+- 📱 Fully Responsive Design
+- ☁️ Live Deployment on Vercel & Render
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React, Bootstrap
-- **State Management**: useState, Props
-- **Data Source**: Static JSON / `json-server` (based on setup)
-- **Deployment**: Netlify / GitHub Pages
+### Frontend
+- React
+- JavaScript (ES6+)
+- React Router DOM
+- Axios
+- Bootstrap Icons
+- CSS3
+- Vite
+
+### Backend
+- JSON Server
+- REST API
+
+### Deployment
+- Vercel (Frontend)
+- Render (Backend)
+
+---
+
+## 📂 Project Structure
+
+```
+Fruitify/
+│
+├── src/
+│   ├── Components/
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── backend/
+│   ├── db.json
+│   ├── package.json
+│   └── package-lock.json
+│
+├── public/
+└── package.json
+```
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/prithvi772/Fruitify.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the frontend
+
+```bash
+npm run dev
+```
+
+Run the backend
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+---
+
+## 📸 Screenshots
+
+*(Screenshots will be added soon.)*
+
+---
+
+## 👨‍💻 Developer
+
+**Prithvi Gadekar**
+
+React Developer | MERN Stack Enthusiast
+
+---
+
+⭐ If you like this project, don't forget to star the repository!
